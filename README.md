@@ -6,6 +6,8 @@
 - Ignore this step if you want to try in real device port and modify the code mentioned in next block (port name)
 - `sudo socat -d -d pty,raw,echo=0 pty,raw,echo=0`
 - This will create /dev/pts/5 and /dev/pts/6
+- start uart_writer.py which will be continuosly writing to the port.
 
 ## Proxy setup
 - `sudo sudo socat -d -d PTY,link=/tmp/spy_in,raw,echo=0 PTY,link=/tmp/spy_out,raw,echo=0`
+- Run uart_reader.py and proxy.py.
